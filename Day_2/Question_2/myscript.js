@@ -22,3 +22,11 @@ console.log(str.substr(7, 6));
 //The search() method searches a string for a specified value and returns the position of the match.
 var str = "Please locate where 'locate' occurs!";
 console.log(str.search("locate"));
+
+//Array Methods
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits);
+//The join() method also joins all array elements into a string.
+console.log(fruits.join("*"));
+//The push() method adds a new element to an array (at the end)
+console.log(fruits.push("Kiwi"));
