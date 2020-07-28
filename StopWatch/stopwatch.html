@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch</title>
+    <style>
+        div{
+            text-align: center;
+            margin-top: 10%;
+            margin-left: 30%;
+            display: inline-block;
+            border: 1px solid black;
+            padding: 20px;
+            background-color: bisque;
+        }
+        .mytimer{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <script src="myscript.js"></script>
+    <div>
+        <h1>STOPWATCH TIMER</h1>
+        Enter time in minutes:<input type="text" id="mytime">
+        <button id="start" onclick="countdown()">START</button>
+        <p id="timer" class="mytimer">
+            Time Left :: 
+            <input id="minutes" type="text" style="width: 10px; border: none; font-size: 16px;  font-weight: bold; color: black;">
+            <input id="seconds" type="text" style="width: 20px; border: none; font-size: 16px; font-weight: bold; color: black;"> 
+        </p>
+        <button id="reset" onclick="reset()">Reset</button>
+    </div>
+</body>
+</html>
