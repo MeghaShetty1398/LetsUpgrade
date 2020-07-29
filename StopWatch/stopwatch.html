@@ -12,10 +12,20 @@
             display: inline-block;
             border: 1px solid black;
             padding: 20px;
-            background-color: bisque;
+            background-color: #FB86B9;
         }
         .mytimer{
             display:none;
+        }
+        input[type=text],button{
+            height: 30px;
+            width: 150px;
+        }
+        button{
+            background-color: #F9C59F;
+        }
+        b{
+            font-size: 20px;
         }
     </style>
 </head>
@@ -23,14 +33,14 @@
     <script src="myscript.js"></script>
     <div>
         <h1>STOPWATCH TIMER</h1>
-        Enter time in minutes:<input type="text" id="mytime">
-        <button id="start" onclick="countdown()">START</button>
+        <b>Enter time in minutes:</b><input type="text" id="mytime"><br><br>
+        <button id="start" onclick="onStart()">START</button>
+        <button id="reset" onclick="reset()">Reset</button>
         <p id="timer" class="mytimer">
             Time Left :: 
-            <input id="minutes" type="text" style="width: 10px; border: none; font-size: 16px;  font-weight: bold; color: black;">
-            <input id="seconds" type="text" style="width: 20px; border: none; font-size: 16px; font-weight: bold; color: black;"> 
-        </p>
-        <button id="reset" onclick="reset()">Reset</button>
+            <input id="minutes" type="text" style="width: 30px; border: none; font-size: 16px;  font-weight: bold; color: black;">
+            <input id="seconds" type="text" style="width: 30px; border: none; font-size: 16px; font-weight: bold; color: black;"> 
+        </p>       
     </div>
 </body>
 </html>
